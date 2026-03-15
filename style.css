@@ -155,3 +155,7 @@ body {
     font-size: 11px; 
     border-top: 1px solid #eee; 
 }
+.hero h1, .hero .btn-get-started {
+    display: none;
+}
+ 
