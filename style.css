@@ -1,4 +1,4 @@
-here* { 
+* { 
     margin: 0; 
     padding: 0; 
     box-sizing: border-box; 
@@ -12,7 +12,7 @@ body {
     text-align: center;
 }
 
-/* Header */
+/* Header Section */
 .main-header { 
     display: flex; 
     justify-content: space-between; 
@@ -45,10 +45,11 @@ body {
     text-transform: uppercase;
 }
 
-/* Hero Section - Using ocean.jpg */
+/* Hero Section - The Mountains Image */
 .hero { 
     padding: 120px 20px; 
-    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('ocean.jpg'); 
+    /* تأكدي من رفع صورة الجبال باسم mountains.jpg */
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('mountains.jpg'); 
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
@@ -61,10 +62,11 @@ body {
 
 .hero h1 { 
     font-size: 35px; 
-    color: #fff; /* Changed to white to be visible on ocean image */
+    color: #fff; 
     letter-spacing: 2px; 
     margin-bottom: 25px;
     text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
 
 .btn-get-started { 
@@ -74,9 +76,29 @@ body {
     border: none; 
     cursor: pointer; 
     font-weight: bold;
+    text-transform: uppercase;
 }
 
-/* Featured Content */
+/* Icons Section */
+.features { 
+    display: flex; 
+    justify-content: space-around; 
+    padding: 60px 10%; 
+}
+
+.icon { 
+    font-size: 24px; 
+    width: 60px; 
+    height: 60px; 
+    border: 1px solid #ddd; 
+    border-radius: 50%; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin: 0 auto 15px; 
+}
+
+/* Featured Content Section - The Ocean Image */
 .featured-content { padding: 60px 10%; }
 
 .featured-content img { 
@@ -87,7 +109,7 @@ body {
     margin-top: 20px;
 }
 
-/* Secondary Content */
+/* Secondary Content Boxes */
 .secondary-content { 
     display: flex; 
     justify-content: center; 
@@ -101,6 +123,7 @@ body {
     border: 1px solid #eee; 
     width: 450px; 
     text-align: left; 
+    background: #fff;
 }
 
 .text-side { padding: 20px; flex: 1; }
@@ -112,10 +135,23 @@ body {
     min-height: 150px;
 }
 
-/* Footer */
+/* Placeholder for small images */
+.first-img { background-color: #f0f0f0; }
+.second-img { background-color: #e0e0e0; }
+
+.btn-outline { 
+    border: 1px solid #76c7c0; 
+    color: #76c7c0; 
+    background: transparent; 
+    padding: 8px 15px; 
+    margin-top: 15px; 
+    cursor: pointer; 
+}
+
+/* Footer Section */
 .main-footer { 
     padding: 40px; 
     color: #aaa; 
-    font-size: 12px; 
+    font-size: 11px; 
     border-top: 1px solid #eee; 
 }
