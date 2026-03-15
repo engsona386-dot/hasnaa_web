@@ -1,1 +1,193 @@
+/* 1. Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #555;
+    background-color: #fff;
+}
+
+/* 2. Header */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #444;
+}
+
+.dot { color: #76c7c0; }
+
+.navigation ul {
+    display: flex;
+    list-style: none;
+}
+
+.navigation ul li { margin-left: 20px; }
+
+.navigation ul li a {
+    text-decoration: none;
+    color: #666;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* 3. Hero Section */
+.hero {
+    /* شيلنا كلمة images/ هنا كمان */
+    background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url('hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 35px;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.btn-get-started {
+    background-color: #444;
+    color: #fff;
+    padding: 10px 25px;
+    border: none;
+    cursor: pointer;
+}
+
+/* 4. Features (Icons) */
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.feature-item { flex: 1; }
+
+.icon {
+    font-size: 30px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 15px;
+}
+
+/* 5. Featured Content (Ocean Area) */
+.featured-content {
+    text-align: center;
+    padding: 40px 10%;
+}
+
+.featured-content h2 { margin-bottom: 10px; color: #444; }
+
+.subtitle { color: #888; margin-bottom: 30px; }
+
+.video-placeholder {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.video-placeholder img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255,255,255,0.8);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #76c7c0;
+}
+
+/* 6. Secondary Content (Boxes) */
+.secondary-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 10%;
+    gap: 20px;
+}
+
+.info-box {
+    display: flex;
+    flex: 1;
+    border: 1px solid #eee;
+}
+
+.text-side {
+    padding: 20px;
+    flex: 1;
+}
+
+.img-side {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    min-height: 150px;
+}
+
+/* شيلنا كلمة images/ من هنا كمان */
+.first-img { background-image: url('box1.jpg'); }
+.second-img { background-image: url('box2.jpg'); }
+
+.btn-outline {
+    border: 1px solid #76c7c0;
+    color: #76c7c0;
+    background: none;
+    padding: 5px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* 7. Final Call & Footer */
+.final-call {
+    text-align: center;
+    padding: 50px 10%;
+}
+
+.btn-light-blue {
+    background-color: #fff;
+    border: 2px solid #76c7c0;
+    color: #76c7c0;
+    padding: 10px 30px;
+    margin-top: 20px;
+}
+
+.main-footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: #aaa;
+    border-top: 1px solid #eee;
+}
